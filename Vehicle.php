@@ -1,6 +1,8 @@
 <?php
 
-class Vehicle
+require_once 'HighWay.php';
+
+abstract class Vehicle
 {
 
     protected $color;
@@ -76,4 +78,5 @@ class Vehicle
     {
         $this->nbWheels = $nbWheels;
     }
+
 }
