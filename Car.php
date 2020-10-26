@@ -8,10 +8,12 @@ class Car extends Vehicle{
     private $energy;
     private $energyLevel;
     protected $currentSpeed = 5;
-    public function __construct(string $color, int $nbSeats, string $energy)
+    private $hasParkBrake;
+    public function __construct(string $color, int $nbSeats, string $energy, bool $hasParkBrake)
     {
         parent::__construct($color,$nbSeats);
         $this->energy = $energy;
+        $this->hasParkBrake = $hasParkBrake;
     }
 
     
@@ -31,5 +33,34 @@ class Car extends Vehicle{
         return $this->energyLevel;
     }
     
+    public function getHasParkBrake(): bool
+    {
+    return $this->hasParkBrake;
+    }
+
+    public function setHasParkBrake (bool $hasParkBrake) : void
+    {
+        $this->hasParkBrake = $hasParkBrake;
+    }
+
+    public function setParkBrake(){
+        $this->hasParkBrake === false;
+    }
+
+    public function start(){
+        
+        try {
+            if ($this->getHasParkBrake()===true) {
+                throw new Exception("Attention, le frein à main est enclanché.");
+            }
+        } catch (Exception $e) {
+            echo "Exception received: <br>". $e->getMessage();
+            return $this->setParkBrake();
+        } finally {
+            echo "Ma voiture roule comme un donut !";
+            
+        }
+
+    }
 
 }

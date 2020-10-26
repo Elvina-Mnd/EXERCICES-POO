@@ -1,7 +1,5 @@
 <?php
 
-require_once 'HighWay.php';
-
 abstract class Vehicle
 {
 

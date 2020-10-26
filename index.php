@@ -67,7 +67,7 @@ echo '<br> Vitesse du camion : ' . $Wanda->getCurrentSpeed() . ' km/h' . '<br>';
 echo $Wanda->brake();*/
 
 
-$autoroute = new MotorWay();
+/*$autoroute = new MotorWay();
 $route = new ResidentialWay();
 $pieton = new PedestrianWay();
 
@@ -87,7 +87,11 @@ var_dump($route);
 $velo = new Bicycle ('yellow', 2, 'wind');
 $pieton->addvehicle($velo);
 $pieton->addvehicle($skate);
-var_dump($pieton);
+var_dump($pieton);*/
+
+$twingo = new Car('blue', 4, 'fuel',true);
+$twingo->start();
+
 
 
 
