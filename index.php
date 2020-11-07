@@ -90,7 +90,10 @@ $pieton->addvehicle($skate);
 var_dump($pieton);*/
 
 $twingo = new Car('blue', 4, 'fuel',false);
-$twingo->start();
+echo $twingo->switchOn();
+
+$bicycle = new Bicycle ('red', 1, 'electric');
+echo $bicycle->switchOn();
 
 
 
