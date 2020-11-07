@@ -8,6 +8,7 @@ require_once 'HighWay.php';
 require_once 'MotorWay.php';
 require_once 'PedestrianWay.php';
 require_once 'ResidentialWay.php';
+require_once 'Speedometer.php';
 
 
 
@@ -89,12 +90,15 @@ $pieton->addvehicle($velo);
 $pieton->addvehicle($skate);
 var_dump($pieton);*/
 
-$twingo = new Car('blue', 4, 'fuel',false);
+/*$twingo = new Car('blue', 4, 'fuel',false);
 echo $twingo->switchOn();
 
 $bicycle = new Bicycle ('red', 1, 'electric');
-echo $bicycle->switchOn();
+echo $bicycle->switchOn();*/
 
+echo Speedometer::convertMilesTokm(100);
+echo '<br>';
+echo Speedometer::convertKmTomiles(100);
 
 
 
