@@ -89,7 +89,7 @@ $pieton->addvehicle($velo);
 $pieton->addvehicle($skate);
 var_dump($pieton);*/
 
-$twingo = new Car('blue', 4, 'fuel',true);
+$twingo = new Car('blue', 4, 'fuel',false);
 $twingo->start();
 
 

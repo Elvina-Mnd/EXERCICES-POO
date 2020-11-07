@@ -44,7 +44,7 @@ class Car extends Vehicle{
     }
 
     public function setParkBrake(){
-        $this->hasParkBrake === false;
+        $this->hasParkBrake = false;
     }
 
     public function start(){
